@@ -43,9 +43,10 @@ void main() {
       } else if (playerMove == Move.rock && aiMove == Move.scissor ||
           playerMove == Move.paper && aiMove == Move.rock ||
           playerMove == Move.scissor && aiMove == Move.paper) {
-        print("\x1B[32m Congratulations,$playerName ! You Win ! ! ! \x1B[0m");
+        print("✨ \x1B[32m Congratulations,$playerName ! You Win ! ! ! \x1B[0m");
       } else {
-        print('\x1B[31m Sorry,$playerName!You lose ! Try again! ! ! \x1B[0m');
+        print(
+            '😥 \x1B[31m Sorry,$playerName ! You lose ! Try again! ! ! \x1B[0m');
       }
     } else if (input == 'q' || input == 'Q') {
       break;
